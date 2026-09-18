@@ -1,0 +1,39 @@
+.btn {
+  padding: 0.9rem 2rem;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s, transform 0.1s;
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--roxo-escuro);
+  outline-offset: 3px;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn-primario {
+  background-color: var(--roxo);
+  color: #fff;
+}
+
+.btn-primario:hover {
+  background-color: var(--roxo-escuro);
+}
+
+.btn-secundario {
+  background-color: transparent;
+  color: var(--roxo);
+  border-color: var(--roxo);
+}
+
+.btn-secundario:hover {
+  background-color: rgba(108, 92, 231, 0.12);
+}

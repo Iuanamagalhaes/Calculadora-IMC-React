@@ -1,0 +1,62 @@
+.historico {
+  width: min(760px, 100%);
+  margin-top: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: 18px;
+  background-color: rgba(255, 255, 255, 0.16);
+  color: #fff;
+  backdrop-filter: blur(4px);
+}
+
+.historico-topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+}
+
+.historico-topo h2 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.historico-topo button {
+  border: none;
+  background: none;
+  color: #fff;
+  font-family: inherit;
+  font-size: 0.82rem;
+  text-decoration: underline;
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.historico-topo button:hover {
+  opacity: 1;
+}
+
+.historico ul {
+  list-style: none;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.historico li {
+  display: grid;
+  grid-template-columns: 70px 1fr auto;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.55rem 0.75rem;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.14);
+  font-size: 0.88rem;
+}
+
+.historico-imc {
+  font-weight: 800;
+}
+
+.historico-data {
+  opacity: 0.8;
+  font-size: 0.78rem;
+}

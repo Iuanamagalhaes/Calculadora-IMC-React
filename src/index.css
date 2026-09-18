@@ -1,0 +1,35 @@
+:root {
+  --roxo: #6c5ce7;
+  --roxo-escuro: #4b3fd6;
+  --cartao: #e2e2e9;
+  --texto: #1b1b2f;
+  --texto-suave: #5b5b73;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", "Lato", system-ui, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(160deg, #6c5ce7 0%, #5a4bd4 60%, #4b3fd6 100%);
+  color: var(--texto);
+}
+
+input,
+button {
+  font-family: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

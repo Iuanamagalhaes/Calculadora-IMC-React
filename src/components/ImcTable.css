@@ -1,0 +1,114 @@
+#result-container h1 {
+  font-size: clamp(1.7rem, 4.5vw, 2.3rem);
+  font-weight: 800;
+  color: var(--roxo);
+  text-align: center;
+  margin-bottom: 1.4rem;
+}
+
+.resultado-destaque {
+  border-radius: 18px;
+  padding: 1.6rem 1rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.resultado-destaque.magreza { border-left-color: #f2b705; }
+.resultado-destaque.normal { border-left-color: #2bb673; }
+.resultado-destaque.sobrepeso { border-left-color: #f2872d; }
+.resultado-destaque.obesidade { border-left-color: #e6592e; }
+.resultado-destaque.grave { border-left-color: #c9283e; }
+
+.resultado-numero {
+  font-size: clamp(3.4rem, 12vw, 5rem);
+  font-weight: 800;
+  line-height: 1;
+  color: var(--roxo);
+}
+
+.resultado-numero span {
+  font-size: 0.4em;
+}
+
+.resultado-info {
+  margin-top: 0.4rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--texto);
+}
+
+.resultado-resumo {
+  margin-top: 0.4rem;
+  font-size: 0.88rem;
+  color: var(--texto-suave);
+}
+
+.cards-extra {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.card-extra {
+  display: grid;
+  gap: 0.3rem;
+  padding: 1rem;
+  border-radius: 14px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.card-extra strong {
+  font-size: 1.25rem;
+  color: var(--roxo);
+}
+
+.card-extra small {
+  font-size: 0.78rem;
+  color: var(--texto-suave);
+  line-height: 1.35;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 14px;
+  overflow: hidden;
+  font-size: 0.9rem;
+}
+
+table caption {
+  padding-bottom: 0.6rem;
+  font-size: 0.85rem;
+  color: var(--texto-suave);
+  text-align: left;
+}
+
+th,
+td {
+  padding: 0.65rem 0.8rem;
+  text-align: left;
+}
+
+thead th {
+  background-color: rgba(108, 92, 231, 0.15);
+  font-weight: 700;
+}
+
+tbody tr + tr td {
+  border-top: 1px solid rgba(27, 27, 47, 0.1);
+}
+
+tbody tr.destaque {
+  background-color: var(--roxo);
+  color: #fff;
+  font-weight: 700;
+}
+
+
+@media (max-width: 520px) {
+  .cards-extra {
+    grid-template-columns: 1fr;
+  }
+}

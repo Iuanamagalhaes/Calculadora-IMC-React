@@ -1,0 +1,43 @@
+.genero-opcoes {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 0.6rem;
+}
+
+.genero-card {
+  display: grid;
+  justify-items: center;
+  gap: 0.5rem;
+  width: 110px;
+  padding: 1rem 0.5rem;
+  border-radius: 14px;
+  border: 2px solid rgba(27, 27, 47, 0.25);
+  background-color: rgba(255, 255, 255, 0.45);
+  color: var(--texto);
+  font-family: inherit;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: border-color 0.15s, background-color 0.15s, color 0.15s;
+}
+
+.genero-card svg {
+  width: 46px;
+  height: 46px;
+}
+
+.genero-card:hover {
+  border-color: var(--roxo);
+}
+
+.genero-card.ativo {
+  border-color: var(--roxo);
+  background-color: var(--roxo);
+  color: #fff;
+  font-weight: 700;
+}
+
+.genero-card:focus-visible {
+  outline: 3px solid var(--roxo-escuro);
+  outline-offset: 2px;
+}

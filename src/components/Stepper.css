@@ -1,0 +1,67 @@
+.stepper {
+  display: grid;
+  justify-items: center;
+  gap: 0.35rem;
+}
+
+.stepper .campo-label {
+  justify-self: start;
+}
+
+.stepper-valor {
+  width: 100%;
+  max-width: 180px;
+  border: none;
+  background: transparent;
+  text-align: center;
+  font-family: inherit;
+  font-size: clamp(2.6rem, 7vw, 3.6rem);
+  font-weight: 800;
+  line-height: 1;
+  color: var(--roxo);
+  border-bottom: 2px dashed transparent;
+}
+
+.stepper-valor:hover,
+.stepper-valor:focus {
+  border-bottom-color: rgba(108, 92, 231, 0.45);
+  outline: none;
+}
+
+.stepper-sufixo {
+  font-size: 0.85rem;
+  color: var(--texto-suave);
+}
+
+.stepper-botoes {
+  display: flex;
+  gap: 1.75rem;
+  margin-top: 0.4rem;
+}
+
+.stepper-botoes button {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--roxo);
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 0.15s, transform 0.1s;
+}
+
+.stepper-botoes button:hover {
+  background-color: var(--roxo-escuro);
+}
+
+.stepper-botoes button:active {
+  transform: scale(0.92);
+}
+
+.stepper-botoes button:focus-visible {
+  outline: 3px solid var(--roxo-escuro);
+  outline-offset: 2px;
+}
