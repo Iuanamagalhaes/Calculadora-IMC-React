@@ -4,6 +4,8 @@ Aplicação em React + Vite que calcula o Índice de Massa Corporal a partir de 
 peso, idade e gênero, mostra a classificação segundo a tabela da OMS e guarda um
 histórico dos últimos cálculos no navegador.
 
+![Preview da aplicação](Calculadora-IMC.png)
+
 ## Funcionalidades
 
 - Altura definida por slider de 50 a 250 cm, com preenchimento proporcional ao valor
